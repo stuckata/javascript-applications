@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="element-insertion.js"></script>
-    <title>Element Insertion</title>
-</head>
-<body>
-<form>
-    <p>Add new element: <br>
-        <input type="radio" name="selectPosition" value="before" checked>Before
+    <head lang="en">
+        <meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="element-insertion.js"></script>
+        <title>Element Insertion</title>
+    </head>
+    <body>
+        <form>
+            <p>Add new element:
+                <br>
+                <input type="radio" name="selectPosition" value="before" checked>Before
+                <br>
+                <input type="radio" name="selectPosition" value="after">After
+                <br>
+                <input type="text" name="inputElement">
+                <br>
+                <input type="button" name="submitInputElement" value="Submit" onclick="addElement()">
+            </p>
+        </form>
         <br>
-        <input type="radio" name="selectPosition" value="after">After
-        <br>
-        <input type="text" name="inputElement">
-        <br>
-        <input type="button" name="submitInputElement" value="Submit" onclick="addElement()"></p>
-</form>
-<br>
-<p>Display changes:</p>
-<div id="display"><ul></ul></div>
+        <p>Display changes:</p>
+        <div id="display">
+        <ul></ul>
+    </div>
 </body>
 </html>
