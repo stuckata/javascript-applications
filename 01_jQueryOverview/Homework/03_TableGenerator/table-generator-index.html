@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="table-generator.js"></script>
+        <title>Table Generator</title>
+        <style>
+        table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 3px 7px;
+        }
+        th{
+        background-color: darkseagreen;
+        }
+        </style>
+    </head>
+    <body>
+        <form>
+            <p>Enter JSON string:</p>
+            <p><textarea rows="4" cols="50" name="inputArea" id="inputString"></textarea></p>
+            <p><input type="button" name="submitInput" value="Submit" onclick="tableGenerator()"></p>
+        </form>
+        <p>Output Table:</p>
+        <section>
+            <table>
+                <tr>
+                    <th>Manufacturer</th>
+                    <th>Model</th>
+                    <th>Year</th>
+                    <th>Price</th>
+                    <th>Class</th>
+                </tr>
+            </table>
+        </section>
+    </body>
+</html>
