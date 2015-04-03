@@ -7,27 +7,37 @@
         <title>Slideshow</title>
         <style>
         button{
-            width: 90px;
+        width: 90px;
+        margin: 40px;
+        }
+        img{
+        width: 200%;
+        height: auto;
         }
         ul{
-            list-style-type: none;
-            display: inline-block;
+        list-style-type: none;
+        display: inline-block;
         }
         p{
-            display: inline-table;
+        display: inline-table;
+        }
+        div{
+            margin: 20px;
         }
         </style>
     </head>
     <body>
         <p>
+            <div>
+                <ul id="slideShow">
+                    <li><img src="images/andyson-platinum-r1200_rc_120x90.png" alt="" /></li>
+                    <li><img src="images/CoolersCover_rc_120x90.png" alt="" /></li>
+                    <li><img src="images/leaf_icon_image_rc_120x90.jpg" alt="" /></li>
+                    <li><img src="images/Vive-Cover_rc_120x90.jpg" alt="" /></li>
+                    <li><img src="images/VPNProxyCover_rc_120x90.jpg" alt="" /></li>
+                </ul>
+            </div>
             <button type="button" id="previousButton">Previous</button>
-            <ul id="slideShow">
-                <li><img src="images/andyson-platinum-r1200_rc_120x90.png" alt="" /></li>
-                <li><img src="images/CoolersCover_rc_120x90.png" alt="" /></li>
-                <li><img src="images/leaf_icon_image_rc_120x90.jpg" alt="" /></li>
-                <li><img src="images/Vive-Cover_rc_120x90.jpg" alt="" /></li>
-                <li><img src="images/VPNProxyCover_rc_120x90.jpg" alt="" /></li>
-            </ul>
             <button type="button" id="nextButton">Next</button>
         </p>
     </body>
