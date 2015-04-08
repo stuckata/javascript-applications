@@ -21,9 +21,12 @@
 	if (localStorage.name != undefined) {
 		$("#inputForm").hide();
 		$("#logoutButton").hide();
-		$("#greeting").append(', ' + localStorage.name + '! Your visits count: ' + userSessionsCount +
-			' Total visits count: ' + counter);
+		$("#greeting").append(', ' + localStorage.name + '!');
+		$("#userVisitsCount").append(localStorage.name + ' visits count: ' + userSessionsCount);
+		$("#totalVisitsCount").append('Total visits count: ' + counter);
 		$("#greetingAlert").show();
+		$("#userVisitsCount").show();
+		$("#totalVisitsCount").show();
 		$("#logoutButton").show();
 	};
 
@@ -48,7 +51,9 @@
 		userName = localStorage.name;
 		localStorage.removeItem("name", userName);
 		$("#greetingAlert").hide();
-		$("#logoutButton").hide();
+		$("#userVisitsCount").hide();
+		$("#greetingAlert").hide();
+		$("#totalVisitsCount").hide();
 		$("#inputForm").show();
 	});
 })();
