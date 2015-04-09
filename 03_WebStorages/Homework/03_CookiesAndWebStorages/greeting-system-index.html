@@ -1,35 +1,35 @@
 ﻿<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-		<title>Greeting System</title>
-	</head>
-	<body>
-		<div id="inputForm" class="col-md-2 col-md-offset-2 container">
-			<form class="form-signin">
-				<h2 class="form-signin-heading">Enter Your Name:</h2>
-				<label for="inputName" class="sr-only">Name</label>
-				<input type="text" id="inputName" class="form-control" placeholder="Name..." required autofocus>
-				<button id="submitButton" class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
-			</form>
-			</div> <!-- /container -->
-			<div id="greetingAlert" class="col-md-5 col-md-offset-1 container">
-				<div class="alert alert-success" role="alert">
-					<strong><span id="greeting">Hello</span></strong>
-				</div>
-				<div class="alert alert-info" role="alert">
-					<strong><span id="userVisitsCount"></span></strong>
-				</div>
-				<div class="alert alert-warning" role="alert">
-					<strong><span id="totalVisitsCount"></span></strong>
-				</div>
-				<button id="logoutButton" class="btn btn-lg btn-primary btn-block" type="logout">Logout</button>
-			</div>
-			
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-			<script src="greeting-system-app.js"></script>
-		</body>
-	</html>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+	<title>Greeting System</title>
+</head>
+<body>
+	<div id="inputForm" class="col-md-2 col-md-offset-5 container">
+		<form class="form-signin">
+			<h2 class="form-signin-heading">Enter Your Name:</h2>
+			<label for="inputName" class="sr-only">Name</label>
+			<input type="text" id="inputName" class="form-control" placeholder="Name..." required autofocus>
+			<button id="submitButton" class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+		</form>
+	</div> <!-- /container -->
+	<div id="greetingAlert" class="col-md-4 col-md-offset-4 container">
+		<div class="alert alert-success" role="alert">
+			<strong><span id="greeting">Hello</span></strong>
+		</div>
+		<div class="alert alert-info" role="alert">
+			<strong><span id="userVisitsCount"></span></strong>
+		</div>
+		<div class="alert alert-warning" role="alert">
+			<strong><span id="totalVisitsCount"></span></strong>
+		</div>
+		<button id="logoutButton" class="btn btn-lg btn-primary btn-block" type="logout">Logout</button>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script src="greeting-system-app.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="flipclock.css">
+	<title>Poll</title>
+</head>
+<body>
+<div class="col-md-8 col-md-offset-2 container">
+	<div class="col-md-4 col-md-offset-4 container">
+		<div class="clock" style="margin:2em;"></div>
+	</div>
+	<div id="questions" class="col-md-8 col-md-offset-2 container">
+		<div class="alert alert-success" role="alert">
+			<strong>Which is your favorite beer?</strong>
+		</div>
+		<div class="radio">
+			<label>
+				<input type="radio" name="beer" value="zagorka" checked="checked"> Zagorka
+			</label>
+			<label>
+				<input type="radio" name="beer" value="kameniza"> Kameniza
+			</label>
+			<label>
+				<input type="radio" name="beer" value="burgasko"> Burgasko
+			</label>
+			<label>
+				<input type="radio" name="beer" value="pirinsko"> Pirinsko
+			</label>
+		</div>
+		<div class="alert alert-success" role="alert">
+			<strong>Which is your favorite car?</strong>
+		</div>
+		<div class="radio">
+			<label>
+				<input type="radio" name="car" value="mercedes" checked="checked"> Mercedes Benz
+			</label>
+			<label>
+				<input type="radio" name="car" value="bmw"> BMW
+			</label>
+			<label>
+				<input type="radio" name="car" value="honda"> Honda
+			</label>
+			<label>
+				<input type="radio" name="car" value="vw"> VW
+			</label>
+		</div>
+		<button id="submitButton" class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+	</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="flipclock.min.js"></script>
+<script src="poll-app.js"></script>
+</body>
+</html>
