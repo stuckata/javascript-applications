@@ -3,8 +3,28 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.22609.0
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Books", "Books", "{68B2AD7C-7F4C-4E8E-85F7-03206C098C16}"
+	ProjectSection(SolutionItems) = preProject
+		books-app-index.html = books-app-index.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{55BEC1EB-5C16-4D73-A321-0DC8323B7F05}"
+	ProjectSection(SolutionItems) = preProject
+		ajax-requester.js = ajax-requester.js
+		books-app.js = books-app.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "styles", "styles", "{163FE975-5F0F-4491-86BB-1A90EBFC1E43}"
+	ProjectSection(SolutionItems) = preProject
+		books-app.css = books-app.css
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{55BEC1EB-5C16-4D73-A321-0DC8323B7F05} = {68B2AD7C-7F4C-4E8E-85F7-03206C098C16}
+		{163FE975-5F0F-4491-86BB-1A90EBFC1E43} = {68B2AD7C-7F4C-4E8E-85F7-03206C098C16}
 	EndGlobalSection
 EndGlobal
